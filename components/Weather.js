@@ -19,7 +19,7 @@ const Weather = ({ data }) => {
           />
           <p className="text-2xl">{data.weather[0].main}</p>
         </div>
-        <p className="text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
+        <p className="text-9xl">{data.main.temp.toFixed(0)}&deg;F</p>
       </div>
 
       {/*bottom section*/}
@@ -28,7 +28,7 @@ const Weather = ({ data }) => {
         <div className="flex justify-between text-center">
           <div>
             <p className="font-bold text-2xl">
-              {data.main.feels_like.toFixed(0)}&#176;
+              {data.main.feels_like.toFixed(0)}&deg;F
             </p>
             <p className="text-xl">Feels Like</p>
           </div>
